@@ -3,14 +3,43 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Hipnose</title>
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/bootstrap-grid.css">
-		<link rel="stylesheet" href="css/bootstrap-reboot.css">
-		<style>
+	</head>
+	<style>
+* {
+	padding: 0px;
+    margin: 0px;
+	border: 0px;
+	border-spacing: 0px;
+    text-align: center;
+	vertical-align: top;
+}
+
 body {
-	font-size: 12px;
 	background-attachment: fixed;
 	background-image: linear-gradient(0deg, #aaddbb, #aabbdd);
+}
+
+.cabecalho {
+	width: 100%;
+	height: 60px;
+	display: inline-block;
+}
+
+.menu-lateral {
+	width: 25%;
+	height: 100px;
+	display: inline-block;
+}
+
+.menu-item {
+	width: 100%;
+	text-align: left;
+}
+
+.conteudo {
+	width: 70%;
+	height: 90%;
+	display: inline-block;
 }
 
 .content-border {
@@ -23,32 +52,36 @@ body {
 
 .content-body {
 	border: none;
-	height: 5000px;
+	height: 8000px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: #eeeeee;
 }
-		</style>
-	</head>
-	<body class="container">
+
+.noborder100percent {
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+}
+
+	</style>
+	<body>
 		<div class="content-border">
-			<div class="card content-body">
-				<h1 class="text-center">Hipnose</h1>
-				<div>
-					<br/> <a href="./artigo/00 - Transição de Carreira.txt" target="content">00 - Transição de Carreira</a>
-					<br/> <a href="./artigo/01 - Hipnose funciona de verdade.txt" target="content">01 - Hipnose funciona de verdade</a>
-					<br/> <a href="./artigo/02 - O que eu vejo de hipnose na TV, é real.txt" target="content">02 - O que eu vejo de hipnose na TV, é real</a>
-					<br/> <a href="./artigo/03 - Não olhe pra mim... eu não quero ser hipnotizado!.txt" target="content">03 - Não olhe pra mim... eu não quero ser hipnotizado!</a>
-					<br/> <a href="./artigo/04 - Mas eu não acredito em hipnose... e agora.txt" target="content">04 - Mas eu não acredito em hipnose... e agora?</a>
-					<br/> <a href="./artigo/05 - Mas Bruno, eu sou cristão... não me envolvo com essas coisas!.txt" target="content">05 - Mas Bruno, eu sou cristão... não me envolvo com essas coisas!</a>
-					<br/> <a href="./artigo/06 - Então, você vai dominar a minha mente.txt" target="content">06 - Então, você vai dominar a minha mente</a>
-					<br/> <a href="./artigo/07 - E se eu ficar preso na hipnose! E se eu não voltar!.txt" target="content">07 - E se eu ficar preso na hipnose! E se eu não voltar!</a>
-					<br/> <a href="./artigo/98 - Hipnose não é SÓ brincadeira.txt" target="content">Hipnose não é SÓ brincadeira</a>
-				</div>
-				<div class="card content-body">
-					<iframe name="content" style="height: 100%; border: none;" src="./artigo/01 - Hipnose funciona de verdade.txt" ></iframe>
-				</div>
+		<div class="content-body">
+			<div class="cabecalho"><h1>Hipnose</h1></div>
+			<div class="menu-lateral">
+				<a href="./artigo/00 - Transição de Carreira.txt" target="content"> <div class="menu-item">00 - Transição de Carreira</div> </a>
+				<a href="./artigo/01 - Hipnose funciona de verdade.txt" target="content"> <div class="menu-item">01 - Hipnose funciona de verdade</div> </a>
+				<a href="./artigo/02 - O que eu vejo de hipnose na TV, é real.txt" target="content"> <div class="menu-item">02 - O que eu vejo de hipnose na TV, é real</div> </a>
+				<a href="./artigo/03 - Não olhe pra mim... eu não quero ser hipnotizado!.txt" target="content"> <div class="menu-item">03 - Não olhe pra mim... eu não quero ser hipnotizado!</div> </a>
+				<a href="./artigo/04 - Mas eu não acredito em hipnose... e agora.txt" target="content"> <div class="menu-item">04 - Mas eu não acredito em hipnose... e agora?</div> </a>
+				<a href="./artigo/05 - Mas Bruno, eu sou cristão... não me envolvo com essas coisas!.txt" target="content"> <div class="menu-item">05 - Mas Bruno, eu sou cristão... não me envolvo com essas coisas!</div> </a>
+				<a href="./artigo/06 - Então, você vai dominar a minha mente.txt" target="content"> <div class="menu-item">06 - Então, você vai dominar a minha mente</div> </a>
+				<a href="./artigo/07 - E se eu ficar preso na hipnose! E se eu não voltar!.txt" target="content"> <div class="menu-item">07 - E se eu ficar preso na hipnose! E se eu não voltar!</div> </a>
+				<a href="./artigo/98 - Hipnose não é SÓ brincadeira.txt" target="content"> <div class="menu-item">Hipnose não é SÓ brincadeira</div> </a>
 			</div>
+			<div class="conteudo"><iframe name="content" class="noborder100percent" src="./artigo/01 - Hipnose funciona de verdade.txt" ></iframe></div>
+		</div>
 		</div>
 	</body>
 </html>
